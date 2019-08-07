@@ -22,7 +22,7 @@ class PetsController < ApplicationController
     @pet = Pet.find(params[:id])
     erb :'/pets/show'
   end
-
+  #patch
   post '/pets/:id' do
     @pet = Pet.find(params[:id])
     @pet.update(params["pet"])
