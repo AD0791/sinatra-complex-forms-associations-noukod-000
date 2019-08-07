@@ -26,6 +26,7 @@ class OwnersController < ApplicationController
     erb :'/owners/edit'
   end
 
+  # patch doesn't work
   post '/owners/:id' do
     ####### bug fix
     if !params[:owner].keys.include?("pet_ids")
